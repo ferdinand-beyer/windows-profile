@@ -1,0 +1,19 @@
+Directory layout and collection of batch scripts for the Windows Command
+Prompt.
+
+Description of the directory layout (compared to the Filesystem Hierarchy
+Standard FHS):
+
+    Config          configuration files (like 'etc')
+    Exec            executables, mainly batch scripts (like 'bin')
+    Exec\Support    internal executables that are not intended to be
+                    executed directly by users (like 'libexec')
+
+Environment setup: Run 'Exec\Support\cmdinit.bat'.  Among other things,
+this sets up the PATH environment variable to include the 'Exec'
+directory.  With a registry entry, the Windows Command Promot (cmd.exe)
+can be configured to load this script automatically, see the source of
+'cmdinit.bat' for details.
+
+Copyright (c) 2017 Ferdinand Beyer
+Distributed under the MIT license (see LICENCE).
