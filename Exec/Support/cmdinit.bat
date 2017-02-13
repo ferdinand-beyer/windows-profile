@@ -10,6 +10,9 @@ call :abspath LOCAL_ROOT %~dp0..\..
 
 set PATH=%LOCAL_ROOT%\Exec;%PATH%
 
+:: Used by 'gitk'
+set LANG=en
+
 exit /B
 
 :abspath
